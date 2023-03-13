@@ -29,6 +29,9 @@ PRODUCT_PLATFORM := nagara
 BOARD_BOOTCONFIG += androidboot.hardware=pdx224
 BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=pdx224
 
+# FB console
+#BOARD_KERNEL_CMDLINE += earlycon=simplefb,0xb8000000,1080,2520
+
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
