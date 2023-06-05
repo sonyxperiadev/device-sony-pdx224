@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Platform
+PRODUCT_PLATFORM := nagara
+
 include device/sony/nagara/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
@@ -21,9 +24,6 @@ else
 TARGET_BOOTLOADER_BOARD_NAME := XQ-CQ54
 $(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
 endif
-
-# Platform
-PRODUCT_PLATFORM := nagara
 
 # Kernel cmdline
 BOARD_BOOTCONFIG += androidboot.hardware=pdx224
