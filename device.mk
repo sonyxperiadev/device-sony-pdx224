@@ -35,10 +35,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/acdbdata/waipio_qrd/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_qrd/acdb_cal.acdb \
     $(DEVICE_PATH)/vendor/etc/acdbdata/waipio_qrd/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_qrd/workspaceFileXml.qwsp
 
-# NFC Configuration
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
-
 # Touch firmware
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/firmware/touch_module_id_0x49.img:$(TARGET_COPY_OUT_VENDOR)/firmware/touch_module_id_0x49.img
