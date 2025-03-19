@@ -77,8 +77,5 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/nagara/platform.mk)
 
-# copy NFC firmware
-$(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
-
 # include board vendor blobs
 $(call inherit-product-if-exists, vendor/sony/nagara-common/nagara-partial.mk)
