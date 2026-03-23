@@ -26,9 +26,7 @@ PRODUCT_COPY_FILES := \
 # Audio Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
-    $(DEVICE_PATH)/vendor/etc/mixer_paths_waipio_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_waipio_qrd.xml \
-    $(DEVICE_PATH)/vendor/etc/resourcemanager_waipio_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_waipio_qrd.xml \
-    $(DEVICE_PATH)/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
+    $(DEVICE_PATH)/vendor/etc/mixer_paths_waipio_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_waipio_qrd.xml
 
 # Audio calibration
 PRODUCT_COPY_FILES += \
