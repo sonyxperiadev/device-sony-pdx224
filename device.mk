@@ -15,9 +15,6 @@
 # Device path
 DEVICE_PATH := device/sony/pdx224/rootdir
 
-DEVICE_PACKAGE_OVERLAYS += \
-    device/sony/pdx224/overlay
-
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
@@ -47,6 +44,11 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/sensors/config/waipio_lsm6dso_0_somc_product.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/waipio_lsm6dso_0_somc_product.json \
     $(DEVICE_PATH)/vendor/etc/sensors/config/waipio_somc_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/waipio_somc_default_sensors.json \
     $(DEVICE_PATH)/vendor/etc/sensors/config/sns_device_orient_somc_platform.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient_somc_platform.json
+
+# Device Runtime Resource Overlays
+PRODUCT_PACKAGES += \
+    FrameworkOverlayPDX224 \
+    SystemUIOverlayPDX224
 
 # Device Init
 PRODUCT_PACKAGES += \
