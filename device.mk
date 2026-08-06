@@ -72,7 +72,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=450 \
-    ro.usb.pid_suffix=20d
+    ro.vendor.usb.pid_suffix=20d
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/nagara/platform.mk)
